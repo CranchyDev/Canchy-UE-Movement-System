@@ -3,15 +3,14 @@ Cranchy UE (Unreal Engine) Movement System, is a simplistic and quick way of int
 
 <h2>Instructions to help you setup the code in your project</h2>
 
-Copy and paste the code within these classes towards newly created ones.
-
-Don't forget to change names in accordance to the name of the project.
 
 ----------
 
->>>>> Before you proceed with copy pasting the code, make sure to create a Project that is C++.
+<b>Before you proceed with copy pasting the code, make sure to create a Project that is C++.
 
-<b>NOTE: The name of the Project should be different, but be aware that some of the code must be adapted to that.</b>
+The name of the Project CAN be different but be aware that some of the code must be adapted to that.
+
+Don't forget to change names where needed.</b>
 
 ----------
 
