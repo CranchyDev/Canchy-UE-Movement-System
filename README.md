@@ -28,7 +28,7 @@ Then go back to the initial folder mentioned previously and locate a file that i
 <img width="609" height="29" alt="image" src="https://github.com/user-attachments/assets/2b1b6177-9e49-4ce7-9611-cf7116f3c471" />
 
 
-Right click that file and tap <b>General Visual Studio Project Files</b>.
+Right click that file and tap <b>Generate Visual Studio Project Files</b>.
 
 <img width="297" height="92" alt="image" src="https://github.com/user-attachments/assets/cb452289-05c6-48e9-a861-a201bd075ee0" />
 
@@ -137,7 +137,7 @@ If not, then go back from the beginning (or create a totally new project) and tr
 
 <img width="1343" height="749" alt="image" src="https://github.com/user-attachments/assets/a62bd9a4-fe18-4555-9ef0-c21154e174b7" />
 
--> Within MainInputMapping Context <- <b>Perform this setup on the IA_MoveKeyboard:</b>
+-> Within MainInputMapping Context <- <b>Perform this setup on the IA_Move:</b>
 
 -> <b>S(Walking Backwards)</b>  -> Add Modifiers -> Negate
 <br>
