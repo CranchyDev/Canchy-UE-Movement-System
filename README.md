@@ -15,53 +15,102 @@ Don't forget to change names in accordance to the name of the project.
 
 ----------
 
-<h3><b>Then create each C++ class within the Editor with these optional names or whichever names you prefer:</b></h3>
+Download the <b>Public and Private</b> folders from this repository.
 
-MainChar -> <b>(Character Class)</b>
+Locate your recently created project, typically within <b>Documents/Unreal Projects</b>.
 
-MainPController -> <b>(Player Controller Class)</b>
+Open the folder and locate <b>Source/NameOfTheProject</b>.
 
-PController_MainChar_Interface -> <b>(Unreal Interface Class)</b>
+Copy the previously downloaded <b>Public and Private</b> folders and paste <b>here (NameOfTheProject/Source/NameofOfTheProject).</b>
 
->>> The Name of the project within this code may differ from yours and <b>YOU HAVE TO CHANGE</b> within the newly created classes. <<<
->> Change the title of the API at the beginning of each class after Copy + Pasting the code
->>> 
-> Example: class CRANCHY_MOVEMENTSYS_API IIamAnInterface <- (CRANCHY_MOVEMENTSYS_API should be instead NAMEOFYOURPROJECT_API)
-{
-	GENERATED_BODY()
-	...
-};
 
+Then go back to the initial folder mentioned previously and locate a file that is named <b>NameOfTheProject</b> (it has an Unreal Engine symbol).
+
+<img width="609" height="29" alt="image" src="https://github.com/user-attachments/assets/2b1b6177-9e49-4ce7-9611-cf7116f3c471" />
+
+
+Right click that file and tap <b>General Visual Studio Project Files</b>.
+
+<img width="297" height="92" alt="image" src="https://github.com/user-attachments/assets/cb452289-05c6-48e9-a861-a201bd075ee0" />
+
+
+Afterwards, open the file <b>NameOfTheProject.sln</b> that is in the first folder of your project <b>(Documents/Unreal Projects/NameOfTheProject).</b>
+
+<img width="606" height="23" alt="image" src="https://github.com/user-attachments/assets/bbbfa7e4-cb7a-4d74-89c5-f4010e8fba92" />
+
+Then change the name of the _API on each of the <b>.h classes</b> within the <b>Public</b> folder (this is mandatory and your code won't work if you don't do this).
+
+<img width="344" height="349" alt="image" src="https://github.com/user-attachments/assets/018ab303-8504-4ad4-b08e-b55e7a5260a6" />
+
+<b>This:</b>
+
+<img width="476" height="20" alt="image" src="https://github.com/user-attachments/assets/7a67949f-4b7b-4edc-b101-ad9bc3de463c" />
+
+<b>To this:</b>
+
+<img width="457" height="20" alt="image" src="https://github.com/user-attachments/assets/419b78b3-14bb-43cb-8f5c-02ebffac3248" />
+
+Save each one of them and <b>compile the project</b>. If it goes through, we're done with this part and can move on.
+
+If not, then go back from the beginning (or create a totally new project) and try again.
+
+>> NOTE: Let me know if there are any further complications <b>pretty please</b>, so that I can fix them ASAP.
+ 
 ----------
 
-<h3><b>Then create these Blueprint Classes:</b></h3>
+<h3><b>Next, open the project within the Editor and create these Blueprint Classes:</b></h3>
 
-<b>Specifically, edit these Input Actions to be setup as either a Bool/2DAxis:</b>
+<b>Open Content Drawer (or press CTRL + SPACE) and Right Click on an empty space and a menu will pop.</b>
 
-<img width="800" height="25" alt="image" src="https://github.com/user-attachments/assets/51baa97f-c015-4a75-a2dc-a78e6c443334" />
-<img width="799" height="26" alt="image" src="https://github.com/user-attachments/assets/5c09d7bb-d13d-4533-aef6-79decdaba185" />
+*Down left corner of the editor*
+
+<img width="526" height="150" alt="image" src="https://github.com/user-attachments/assets/e7003563-bd20-4fb7-a0ae-bc5ac78e291a" />
+
+<br>
+
+<img width="448" height="832" alt="image" src="https://github.com/user-attachments/assets/c5d5e17e-edaf-4980-8500-841ce90ef558" />
 
 <b>IA_CameraRotation</b> (Axis2D(Vector2D))
 
+<img width="867" height="573" alt="image" src="https://github.com/user-attachments/assets/59a166e3-31e1-4638-9eec-d313dc4899f2" />
+
 <b>IA_Crouch</b> (Bool)
+
+<img width="854" height="568" alt="image" src="https://github.com/user-attachments/assets/d8bc72c8-312c-4f71-bf52-b11ad1425461" />
 
 <b>IA_Jump</b> (Bool)
 
+<img width="856" height="576" alt="image" src="https://github.com/user-attachments/assets/05725daf-241a-424e-82e3-a4c5023127f6" />
+
 <b>IA_Move</b> (Axis2D(Vector2D))
+
+<img width="858" height="581" alt="image" src="https://github.com/user-attachments/assets/8935c56c-deae-4bf2-a6bd-928305781e05" />
 
 <b>IA_Sprint</b> (Bool)
 
+<img width="856" height="577" alt="image" src="https://github.com/user-attachments/assets/ec85c1c0-a457-4c7b-b387-bf0aa76ee862" />
+
 <br>
+
+-----------
 
 <b>Then continue creating the following Blueprint Classes:</b>
 
 <b>MainInputMappingContext</b> <- IMC (Input Mapping Context) (we'll also use this one later to setup peripheral inputs)
 
+<img width="439" height="830" alt="image" src="https://github.com/user-attachments/assets/54f37238-1150-4ec7-8705-97bc4877b74e" />
+
 <b>UserInterfaceInputMappingContext</b> <- Another IMC but to be used for UI for later usage <b>(highly optional)</b>
 
 <b>MyMainCharBP</b> <- This MUST be derived from the MainChar.cpp class
 
+<img width="391" height="495" alt="image" src="https://github.com/user-attachments/assets/2f58725e-f2c2-4b7c-aaf8-2b17bf1b6c8c" />
+
 <b>MyMainPControllerBP</b> <- This MUST be derived from the MainPController.cpp class
+
+<img width="418" height="505" alt="image" src="https://github.com/user-attachments/assets/c6a171bf-2455-49ad-abe9-2c883712c69b" />
+
+>> NOTE: A Blueprint interface from the previously created class (specifically <b>PController_MainChar_Interface</b>) is not needed here, because this is a C++ ONLY interface.
 
 -----------
 
