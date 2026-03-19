@@ -102,6 +102,24 @@ If not, then go back from the beginning (or create a totally new project) and tr
 
 <b>UserInterfaceInputMappingContext</b> <- Another IMC but to be used for UI for later usage <b>(highly optional)</b>
 
+-----------
+
+<b> Still within the editor, locate the C++ Classes folder</b>
+
+<img width="1005" height="214" alt="image" src="https://github.com/user-attachments/assets/551de930-2f21-49c2-b18b-942bf6257c7a" />
+
+<b>If you can't see it, then click on the wheel at the right corner of the content drawer and tick the C++ Classes checkbox.</b>
+
+<img width="251" height="57" alt="image" src="https://github.com/user-attachments/assets/6799895d-2079-4fe8-9155-285ce991f5a5" />
+
+<br>
+
+<img width="211" height="779" alt="image" src="https://github.com/user-attachments/assets/97f5939f-15f6-41c3-8358-8ebd639d55ac" />
+
+-----------
+
+<b>Then create the follow <b>Blueprint</b> classes derived from the C++ ones:</b>
+
 <b>MyMainCharBP</b> <- This MUST be derived from the MainChar.cpp class
 
 <img width="391" height="495" alt="image" src="https://github.com/user-attachments/assets/2f58725e-f2c2-4b7c-aaf8-2b17bf1b6c8c" />
