@@ -18,7 +18,7 @@ AMainChar::AMainChar()
 
 	// Set this Character to be able to Crouch by default and other properties defined here
 	GetCharacterMovement()->GetNavAgentPropertiesRef().bCanCrouch = true;
-	GetCharacterMovement()->CrouchedHalfHeight = 78.0f;
+	GetCharacterMovement()->SetCrouchedHalfHeight(78.0f);
 
 	// Gets and Sets the default MaxWalkSpeed of this character for later usage, i.e. Sprinting, Dashing, etc
 	DefaultMaxWalkSpeed = GetCharacterMovement()->MaxWalkSpeed;
